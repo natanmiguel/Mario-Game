@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    
+}
+
+body {
+    background-color: #000;
+}
+.master {
+    display: flex;
+   width: 100%;
+   height: auto;
+   
+}
+.mario {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    z-index: 3;
+
+}
+.ponto {
+    margin-top: 5px;
+    font-size: 16px;
+    position: absolute;
+    right: 15px;
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.scoreFinal {
+    color: red;
+    font-size: 22px;
+    animation: normal 1s;
+}
+.ponto p {
+    font-weight: 400;
+}
+.ponto p span {
+    font-weight: 500;
+}
+.jump {
+    animation: jumper 600ms ease-out;
+}
+
+.cano {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    height: 80px;
+    
+   animation: canoAnimado 1.5s infinite linear;
+}
+.nuvi {
+    z-index: 1;
+}
+
+.nuvem {
+    margin-top: 65px;
+    position: absolute;
+    width: 40%;
+
+    animation: nuvemMove 15s infinite linear;
+    
+}
+.gameMario {
+    position: relative;
+    width: 70%;
+    height: 500px;
+    border-bottom: 5px solid greenyellow;
+    margin: 50px auto;
+    background: linear-gradient(#11c7ff, #b3e0f5, #fff);
+    overflow: hidden;
+
+}
+.dark {
+    background: linear-gradient(#033468, #1c678a, #fff);
+}
+.chaoLava {
+    border-bottom: 7px solid red;
+}
+
+.fim {
+    
+    position: relative;
+    display: none;
+    z-index: 10;
+    align-content: center;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.fim h1 {
+   
+    font-size: 70px;
+    font-style: normal;
+    font-weight: bold;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.morreu {
+    animation: morreu 1s linear;
+}
+
+@keyframes canoAnimado {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jumper {
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 180px;
+    }
+    50% {
+        bottom: 180px;
+    }
+    60% {
+        bottom: 180px;
+    }
+
+    70% {
+        bottom: 100px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes nuvemMove {
+    from {
+        right: -500px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes morreu {
+    0% {
+        bottom: 0;
+    }
+    60% {
+        bottom: 150px;
+    }
+
+   
+    
+    100% {
+        bottom: -150px;
+    }
+
+}
