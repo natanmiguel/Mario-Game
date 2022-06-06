@@ -51,3 +51,4 @@ const score = setInterval(() => {
 }, 100);
 
 document.addEventListener('keydown', jump);
+document.addEventListener('click', jump);
