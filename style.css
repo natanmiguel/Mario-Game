@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
    
     
 }
@@ -12,7 +12,7 @@ body {
 .master {
     display: flex;
    width: 100%;
-   height: auto;
+   height: 100%;
    
 }
 .mario {
@@ -67,8 +67,8 @@ body {
 }
 .gameMario {
     position: relative;
-    width: 70%;
-    
+    width: 90%;
+    min-width: 499px;
     height: 500px;
     border-bottom: 5px solid greenyellow;
     margin: 50px auto;
