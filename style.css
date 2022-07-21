@@ -68,6 +68,7 @@ body {
 .gameMario {
     position: relative;
     width: 70%;
+    
     height: 500px;
     border-bottom: 5px solid greenyellow;
     margin: 50px auto;
@@ -104,6 +105,14 @@ body {
 
 .morreu {
     animation: morreu 1s linear;
+}
+
+
+.virado {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 @keyframes canoAnimado {

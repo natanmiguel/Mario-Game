@@ -4,6 +4,7 @@ const nuvem = document.querySelector('.nuvem');
 const fim = document.querySelector('.fim');
 const ponto = document.querySelector('.ponto')
 const cenario = document.querySelector('.gameMario')
+const master = document.querySelector('.master')
 
 const jump = () => {
     mario.classList.add('jump');
@@ -12,6 +13,19 @@ const jump = () => {
         mario.classList.remove('jump');
     }, 500);
 }
+
+const virado = setTimeout(() => {
+    
+    const larguraCenario = window.getComputedStyle(cenario).width.replace('px', '');
+    const alturaCenario = window.getComputedStyle(cenario).height.replace('px', '');
+    console.log(`Larg: ${larguraCenario} e Alt: ${alturaCenario}`);
+    if (larguraCenario < alturaCenario){
+        master.classList.add('virado');
+    } else {
+        master.classList.remove('virado');
+    };
+}, 0);
+
 
 const loop = setInterval(() => {
     const canoPosition = cano.offsetLeft;
