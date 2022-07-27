@@ -16,13 +16,13 @@ const jump = () => {
 
 const virado = setTimeout(() => {
     
-    const larguraCenario = window.getComputedStyle(cenario).width.replace('px', '');
-    const alturaCenario = window.getComputedStyle(cenario).height.replace('px', '');
+    const larguraCenario = window.getComputedStyle(master).width.replace('px', '');
+    const alturaCenario = window.getComputedStyle(master).height.replace('px', '');
     console.log(`Larg: ${larguraCenario} e Alt: ${alturaCenario}`);
     if (larguraCenario < alturaCenario){
-        cenario.classList.add('virado');
+        master.classList.add('virado');
     } else {
-        cenario.classList.remove('virado');
+        master.classList.remove('virado');
     };
 }, 0);
 
