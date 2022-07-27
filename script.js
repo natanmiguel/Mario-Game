@@ -16,8 +16,8 @@ const jump = () => {
 
 const virado = setTimeout(() => {
     
-    const larguraCenario = window.getComputedStyle(master).width.replace('px', '');
-    const alturaCenario = window.getComputedStyle(master).height.replace('px', '');
+    const larguraCenario = parseFloat(window.getComputedStyle(master).width.replace('px', ''));
+    const alturaCenario = parseFloat(window.getComputedStyle(master).height.replace('px', ''));
     console.log(`Larg: ${larguraCenario} e Alt: ${alturaCenario}`);
     if (larguraCenario < alturaCenario ){
         master.classList.add('virado');
