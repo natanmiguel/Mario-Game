@@ -67,8 +67,8 @@ body {
 }
 .gameMario {
     position: relative;
-    width: 90%;
-    min-width: 499px;
+    width: 80%;
+    
     height: 500px;
     border-bottom: 5px solid greenyellow;
     margin: 50px auto;
