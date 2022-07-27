@@ -19,9 +19,13 @@ const virado = setTimeout(() => {
     const larguraCenario = window.getComputedStyle(master).width.replace('px', '');
     const alturaCenario = window.getComputedStyle(master).height.replace('px', '');
     console.log(`Larg: ${larguraCenario} e Alt: ${alturaCenario}`);
-    if (larguraCenario < alturaCenario){
+    if (larguraCenario < alturaCenario ){
         master.classList.add('virado');
-    } else {
+    } if (larguraCenario >= 1000) {
+        master.classList.remove('virado');
+    }
+
+    else {
         master.classList.remove('virado');
     };
 }, 0);
